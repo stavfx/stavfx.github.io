@@ -1,0 +1,98 @@
+/* ─────────────────────────────────────────────────────────────
+   Stav Raviv — placeholder page. Edit the variables to retheme.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --bg:       #0b0e14;
+  --text:     #e6e9ef;
+  --text-dim: #8a93a6;
+  --border:   #232b3a;
+  --accent:   #5eead4;
+  --accent-2: #818cf8;
+  --font-sans: 'Inter', system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(60rem 30rem at 50% -8rem, rgba(94, 234, 212, 0.10), transparent),
+    radial-gradient(50rem 30rem at 80% 110%, rgba(129, 140, 248, 0.08), transparent);
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem clamp(1.25rem, 5vw, 3rem);
+  max-width: 40rem;
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  color: var(--accent);
+  font-weight: 500;
+  font-size: .95rem;
+  letter-spacing: .01em;
+  margin-top: .75rem;
+}
+
+.name {
+  font-size: clamp(2.75rem, 11vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  background: linear-gradient(120deg, var(--text) 30%, var(--accent) 70%, var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.note {
+  margin: 1.5rem auto 0;
+  max-width: 32ch;
+  color: var(--text-dim);
+  font-size: 1.05rem;
+}
+
+.links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .7rem 1.6rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .95rem;
+  transition: transform .15s ease, border-color .15s ease, color .15s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.btn__icon {
+  width: 1.15em;
+  height: 1.15em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+}

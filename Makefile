@@ -1,7 +1,10 @@
-.PHONY: install run
+.PHONY: install clean run
 
 install:
 	bundle install
 
-run: install
+clean:
+	rm -rf _site .jekyll-cache .jekyll-metadata
+
+run: install clean
 	bundle exec jekyll serve --livereload

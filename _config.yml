@@ -1,9 +1,11 @@
-title: Stavfx.GitHub.io
-description: 
-google_analytics: 
-show_downloads: false
-theme: jekyll-theme-hacker
+title: Stav Raviv
+description: Software Engineer at Eluvio — projects, background, and links.
 repository: stavfx/stavfx.github.io
 
-plugins:
-  - jekyll-mentions
+# Custom static site (index.html + assets/css). No Jekyll theme by design.
+# Exclude local tooling from the build output.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - vendor
