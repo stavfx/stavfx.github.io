@@ -3,6 +3,7 @@ description:
 google_analytics: 
 show_downloads: false
 theme: jekyll-theme-hacker
+repository: stavfx/stavfx.github.io
 
-gems:
+plugins:
   - jekyll-mentions
